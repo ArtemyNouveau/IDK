@@ -1,0 +1,77 @@
+@import "../variables";
+
+.button {
+  @height: 3em;
+
+  padding: @height/6 @height/4;
+  margin: @height/4;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: @height/3;
+  background-color: @secondary_color;
+
+  &.red {
+    background-color: @additional_color;
+  }
+
+  .button_text {
+    font-size: @height/3;
+  }
+
+  &.x_large {
+    .button_text {
+      margin: 0 @height;
+
+      &.left {
+        margin: 0 @height*2 0 0;
+      }
+
+      &.right {
+        margin: 0 0 0 @height*2;
+      }
+    }
+  }
+
+  &.large {
+    .button_text {
+      margin: 0 @height/2;
+
+      &.left {
+        margin: 0 @height 0 0;
+      }
+
+      &.right {
+        margin: 0 0 0 @height;
+      }
+    }
+  }
+
+  &.small {
+    .button_text {
+      margin: 0 @height/4;
+
+      &.left {
+        margin: 0 @height/2 0 0;
+      }
+
+      &.right {
+        margin: 0 0 0 @height/2;
+      }
+    }
+  }
+
+  &.x_small {
+    .button_text {
+      margin: 0 @height/6;
+
+      &.left {
+        margin: 0 @height/3 0 0;
+      }
+
+      &.right {
+        margin: 0 0 0 @height/3;
+      }
+    }
+  }
+}

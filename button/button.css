@@ -1,0 +1,52 @@
+.button {
+  padding: 0.5em 0.75em;
+  margin: 0.75em;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 1em;
+  background-color: #ffdb4d;
+}
+.button.red {
+  background-color: #e61400;
+}
+.button .button_text {
+  font-size: 1em;
+}
+.button.x_large .button_text {
+  margin: 0 3em;
+}
+.button.x_large .button_text.left {
+  margin: 0 6em 0 0;
+}
+.button.x_large .button_text.right {
+  margin: 0 0 0 6em;
+}
+.button.large .button_text {
+  margin: 0 1.5em;
+}
+.button.large .button_text.left {
+  margin: 0 3em 0 0;
+}
+.button.large .button_text.right {
+  margin: 0 0 0 3em;
+}
+.button.small .button_text {
+  margin: 0 0.75em;
+}
+.button.small .button_text.left {
+  margin: 0 1.5em 0 0;
+}
+.button.small .button_text.right {
+  margin: 0 0 0 1.5em;
+}
+.button.x_small .button_text {
+  margin: 0 0.5em;
+}
+.button.x_small .button_text.left {
+  margin: 0 1em 0 0;
+}
+.button.x_small .button_text.right {
+  margin: 0 0 0 1em;
+}
+/*# sourceMappingURL=button.css.map */

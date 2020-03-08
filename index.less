@@ -1,0 +1,43 @@
+@import "fonts/Roboto";
+
+html {
+  font-family: Roboto, serif;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+@media (min-width: 575px){
+  .container {
+    max-width: 540px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 767px){
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 991px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1199px){
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@import "column_text/text.css";
+@import "progressbar/progressbar";
+@import "button/button";
+@import "stars/stars";

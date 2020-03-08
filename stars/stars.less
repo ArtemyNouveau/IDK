@@ -1,0 +1,49 @@
+@import "../variables";
+
+.mark_section{
+  @start_size: 50px;
+
+  margin: @start_size/4;
+  width: @start_size*5;
+  height: @start_size;
+
+  .rating_block{
+    border-width: 0;
+    padding: 0;
+    margin: 0;
+
+    .label_star {
+      opacity: 0.2;
+      -webkit-transition: 100ms;
+      -o-transition: 100ms;
+      transition: 100ms;
+      float: right;
+      width: @start_size;
+      height: @start_size;
+      background: url("./stars/images/star-solid.svg") no-repeat 50% 0;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:hover ~ .label_star {
+        opacity: 1;
+      }
+    }
+
+    input[type="radio"] {
+      display: none;
+
+      &:checked ~ .label_star {
+        opacity: 1;
+      }
+
+      &:checked + .label_star {
+        opacity: 1;
+        -webkit-filter: brightness(1.1);
+        filter: brightness(1.1);
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@import "../variables";
+
+.progress {
+  @height: 25px;
+
+  height: @height;
+  margin: @height/4;
+  position: relative;
+  background: @prime_color_darken;
+  border-radius: @height;
+  padding: @height/3;
+  -webkit-box-shadow: inset 0 -1px 1px @prime_color_darken;
+  box-shadow: inset 0 -1px 1px @prime_color_darken;
+
+  .bar {
+    height: 100%;
+    width: 33%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: @height;
+    background: -webkit-gradient(linear, left top, right top, from(@secondary_color), to(@secondary_color_darken));
+    background: -o-linear-gradient(left, @secondary_color, @secondary_color_darken);
+    background: linear-gradient(to right, @secondary_color, @secondary_color_darken);
+    -webkit-box-shadow: inset 0 -1px 1px @secondary_color_darken;
+    box-shadow: inset 0 -1px 1px @secondary_color_darken;
+
+    &+label {
+      color: black;
+    }
+
+    &.red {
+      background: -webkit-gradient(linear, left top, right top, from(@additional_color), to(@additional_color_darken));
+      background: -o-linear-gradient(left, @additional_color, @additional_color_darken);
+      background: linear-gradient(to right, @additional_color, @additional_color_darken);
+      -webkit-box-shadow: inset 0 -1px 1px @additional_color_darken;
+      box-shadow: inset 0 -1px 1px @additional_color_darken;
+
+      &+label {
+        color: white;
+      }
+    }
+
+    &+label {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: 0;
+      position: absolute;
+      width: 100%;
+      font-size: @height;
+      text-align: center;
+    }
+  }
+}

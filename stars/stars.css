@@ -1,0 +1,39 @@
+.mark_section {
+  margin: 12.5px;
+  width: 250px;
+  height: 50px;
+}
+.mark_section .rating_block {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+.mark_section .rating_block .label_star {
+  opacity: 0.2;
+  -webkit-transition: 100ms;
+  -o-transition: 100ms;
+  transition: 100ms;
+  float: right;
+  width: 50px;
+  height: 50px;
+  background: url("images/star-solid.svg") no-repeat 50% 0;
+  cursor: pointer;
+}
+.mark_section .rating_block .label_star:hover {
+  opacity: 1;
+}
+.mark_section .rating_block .label_star:hover ~ .label_star {
+  opacity: 1;
+}
+.mark_section .rating_block input[type="radio"] {
+  display: none;
+}
+.mark_section .rating_block input[type="radio"]:checked ~ .label_star {
+  opacity: 1;
+}
+.mark_section .rating_block input[type="radio"]:checked + .label_star {
+  opacity: 1;
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+/*# sourceMappingURL=stars.css.map */

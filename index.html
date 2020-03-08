@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<main class="container">
+    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+    <section class="column_text col2-m col1-s col4-xl col3-l">
+        <h2 class="h-col-m">Что такое Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt erat ut dui placerat fringilla. Ut
+            vulputate lectus ac euismod bibendum. Sed lorem ante, posuere et sodales id, bibendum a libero. Nam egestas
+            non lectus non blandit. Pellentesque ligula est, malesuada ut consectetur id, molestie vel sapien. Sed
+            aliquet finibus vulputate. Praesent id leo ac enim vulputate iaculis. Praesent sit amet mi eros. Aliquam
+            tristique massa ac lobortis pellentesque. Praesent id vestibulum neque, et viverra est. Vestibulum tempor,
+            quam sit amet interdum tempor, massa quam gravida massa, quis malesuada ipsum arcu eget turpis. Praesent
+            mattis massa non felis ullamcorper vehicula. Quisque placerat tellus erat, a gravida turpis interdum et.
+            Aliquam sodales suscipit nunc a egestas.
+
+            Aliquam erat volutpat. Fusce varius orci eu ex auctor rutrum. Nunc dictum, velit a varius dapibus, urna nisl
+            feugiat dui, sit amet sagittis ipsum justo sed purus. Nunc iaculis aliquet egestas. Curabitur convallis
+            viverra nisl non ornare. Suspendisse faucibus auctor lectus in sodales. Nullam semper placerat est non
+            varius. Nullam id turpis nunc. Phasellus tincidunt tempus mattis. Aliquam tincidunt, libero egestas
+            porttitor sodales, nisl sem pharetra nulla, non luctus turpis leo ac purus. Fusce tincidunt mi quis
+            hendrerit dignissim. Ut erat eros, pellentesque ut ultrices cursus, tempor ac nulla. Cras aliquet urna elit,
+            et tincidunt metus pharetra eu. Quisque molestie tortor eget ipsum scelerisque, sed ullamcorper eros ornare.
+            Duis ac hendrerit neque. Mauris nec sapien quis lorem bibendum sodales.
+
+            Fusce luctus ac enim vitae rhoncus. Pellentesque vel velit nec lectus feugiat molestie. Cras vitae sapien
+            finibus, placerat libero non, rutrum quam. Nam tempus fringilla mi, nec efficitur augue lobortis vel.
+            Quisque gravida sagittis bibendum. Quisque pharetra fringilla nibh eget tincidunt. Curabitur eu vulputate
+            ipsum. Donec interdum bibendum lacus, ultricies volutpat enim molestie auctor. Pellentesque commodo ut velit
+            ut interdum. Donec et tempus ligula. Vestibulum aliquet eget purus ac tincidunt. Curabitur elementum dapibus
+            turpis id suscipit. Aenean varius nibh id nunc finibus facilisis. Fusce odio risus, rutrum ut velit nec,
+            luctus aliquet sem. Suspendisse sodales massa at nibh rhoncus, vitae tempus nunc ultricies. Sed rhoncus
+            purus ac purus aliquet, vitae consequat dui efficitur.</p>
+    </section>
+
+    <div class="progressbar_section">
+        <div class="progress">
+            <span id="progress_bar" class="bar" style="width: 1%"></span>
+            <label id="progress_label">1%</label>
+        </div>
+
+        <a class="button x_large" id="progress1" onclick="move('progress_bar', 'progress_label')">
+            <span class="button_text right">press me</span>
+        </a>
+
+        <a class="button x_large" id="progress2" onclick="move('progress_bar', 'progress_label')">
+            <span class="button_text">or me</span>
+        </a>
+
+        <a class="button x_large" id="progress3" onclick="move('progress_bar', 'progress_label')">
+            <span class="button_text left">maybe me</span>
+        </a>
+    </div>
+
+    <div class="mark_section">
+        <fieldset class="rating_block">
+            <input name="rating" type="radio" value="5" id="star5"/>
+            <label class="label_star" for="star5" title="5"></label>
+
+            <input name="rating" type="radio" value="4" id="star4"/>
+            <label class="label_star" for="star4" title="4"></label>
+
+            <input name="rating" type="radio" value="3" id="star3"/>
+            <label class="label_star" for="star3" title="3"></label>
+
+            <input name="rating" type="radio" value="2" id="star2"/>
+            <label class="label_star" for="star2" title="2"></label>
+
+            <input name="rating" type="radio" value="1" id="star1"/>
+            <label class="label_star" for="star1" title="1"></label>
+        </fieldset>
+    </div>
+
+</main>
+</body>
+<script defer src="progressBarMove.js"></script>
+</html>

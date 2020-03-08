@@ -1,0 +1,154 @@
+.column_text {
+  column-gap: 2em;
+  word-wrap: break-word;
+  text-align: justify;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  p {
+    margin: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    column-span: all;
+    display: inline-block;
+    width: 100%;
+    margin-right: 100%;
+
+    &.h-col {
+      column-span: none;
+    }
+
+    &.h-row {
+      column-span: all;
+    }
+
+    @media screen and (max-width: 766px) {
+      &.h-col-s {
+        column-span: none;
+      }
+
+      &.h-row-s {
+        column-span: none;
+      }
+    }
+
+    @media screen and (min-width: 767px) and (max-width: 990px) {
+      &.h-col-m {
+        column-span: none;
+      }
+
+      &.h-row-m {
+        column-span: none;
+      }
+    }
+
+    @media screen and (min-width: 991px) and (max-width: 1198px) {
+      &.h-col-l {
+        column-span: none;
+      }
+
+      &.h-row-l {
+        column-span: none;
+      }
+    }
+
+    @media screen and (min-width: 1199px) {
+      &.h-col-xl {
+        column-span: none;
+      }
+
+      &.h-row-xl {
+        column-span: none;
+      }
+    }
+  }
+
+  &.col1 {
+    column-count: 1;
+  }
+
+  &.col2 {
+    column-count: 2;
+  }
+
+  &.col3 {
+    column-count: 3;
+  }
+
+  &.col4 {
+    column-count: 4;
+  }
+
+  @media screen and (min-width: 1199px) {
+    &.col1-xl {
+      column-count: 1;
+    }
+
+    &.col2-xl {
+      column-count: 2;
+    }
+
+    &.col3-xl {
+      column-count: 3;
+    }
+
+    &.col4-xl {
+      column-count: 4;
+    }
+  }
+
+  @media screen and (min-width: 991px) and (max-width: 1198px) {
+    &.col1-l {
+      column-count: 1;
+    }
+
+    &.col2-l {
+      column-count: 2;
+    }
+
+    &.col3-l {
+      column-count: 3;
+    }
+
+    &.col4-l {
+      column-count: 4;
+    }
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 990px) {
+    &.col1-m {
+      column-count: 1;
+    }
+
+    &.col2-m {
+      column-count: 2;
+    }
+
+    &.col3-m {
+      column-count: 3;
+    }
+
+    &.col4-m {
+      column-count: 4;
+    }
+  }
+
+  @media screen and (max-width: 766px) {
+    &.col1-s {
+      column-count: 1;
+    }
+
+    &.col2-s {
+      column-count: 2;
+    }
+
+    &.col3-s {
+      column-count: 3;
+    }
+
+    &.col4-s {
+      column-count: 4;
+    }
+  }
+}
